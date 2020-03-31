@@ -28,7 +28,6 @@ const sendForm = () => {
           if(response.status !== 200){
             throw new Error('status network not 200');
           }
-          console.log(response); 
         }) 
         .then(() =>{            
           statusMessage.textContent = successMessage;
@@ -55,26 +54,6 @@ const sendForm = () => {
       body: JSON.stringify(body),
       credentials: 'include'
     });
-    /* return new Promise((resolve, reject) => {
-      const request = new XMLHttpRequest();
-      request.addEventListener('readystatechange', () =>{
-      
-        if(request.readyState !== 4){
-          return;
-        }
-        if(request.status === 200){
-          resolve();
-        }else {
-          reject(request.statusText); 
-        }
-      });
-
-      request.open('POST', './server.php');
-      request.setRequestHeader('Content-type', 'application/json'); 
-
-      request.send(JSON.stringify(body));
-      
-    });   */
   };
 };
 export default sendForm;

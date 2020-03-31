@@ -1,6 +1,6 @@
 const valid = () =>{
-  const formInputs = document.querySelectorAll('form input');
-    
+  'use strict';
+  const formInputs = document.querySelectorAll('form input');   
     formInputs.forEach((item) =>{
       item.addEventListener('input', () => {
         let target = event.target;

@@ -1,4 +1,5 @@
 const togglePopup = ()  =>{
+  'use strict';
   const popup = document.querySelector('.popup'),
     popupBtn = document.querySelectorAll('.popup-btn'),
     popupContent = document.querySelector('.popup-content');
@@ -8,10 +9,10 @@ const togglePopup = ()  =>{
     flyInterval = requestAnimationFrame(popupAnimate);
     count++;
     if(count < 35){
-      popupContent.style.top = count*5 + 'px';  
+      popupContent.style.top = count*6 + 'px';  
     }
     if(count < 110){
-      popupContent.style.left = count*5 + 'px';
+      popupContent.style.left = count*6 + 'px';
     }
     if(count > 110){
       cancelAnimationFrame(flyInterval);

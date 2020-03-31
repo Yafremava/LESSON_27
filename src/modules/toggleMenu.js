@@ -1,4 +1,5 @@
 const toggleMenu = () =>{
+  'use strict';
   const btnMenu = document.querySelector('.menu'),
     menu = document.querySelector('menu');
   btnMenu.addEventListener('click', () => {

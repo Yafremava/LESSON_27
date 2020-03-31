@@ -1,4 +1,5 @@
 const slider = () =>{
+  'use strict';
   const slide = document.querySelectorAll('.portfolio-item'), 
   slider = document.querySelector('.portfolio-content');
 
@@ -14,7 +15,6 @@ const slider = () =>{
     }
   };
   addDots();
-
 
   let dot = document.querySelectorAll('.dot'),
     btn = document.querySelectorAll('.portfolio-btn');

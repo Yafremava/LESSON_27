@@ -1,4 +1,5 @@
 const calc = (price = 100) =>{
+  'use strict';
   const calcInputs = document.querySelectorAll('input.calc-item'),
     calcBlock = document.querySelector('.calc-block'),
     calcType = document.querySelector('.calc-type'),
@@ -24,7 +25,7 @@ const calc = (price = 100) =>{
     }
 
     if(typeValue && squareValue){
-      total = price * typeValue * squareValue * countValue * dayValue;
+      total = Math.ceil(price * typeValue * squareValue * countValue * dayValue);
     }
     totalValue.textContent = total;
   };  
